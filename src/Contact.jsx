@@ -168,7 +168,7 @@ function Contact() {
             <div className="mt-[32px]">
               <a
                 href={cvFile}
-                download
+                download="Aaron_A_FullStack_Resume.pdf"
                 className="inline-flex items-center gap-[8px] rounded-full bg-rose-500 px-[24px] py-[12px] text-[14px] font-semibold text-white shadow-lg shadow-rose-500/20 transition hover:bg-rose-600 hover:shadow-rose-500/40"
               >
                 <i className="fa-solid fa-download"></i>
