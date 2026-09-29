@@ -4,9 +4,9 @@ function About() {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <section id="about" className=" max-w-[1280px] px-[16px] py-[64px] sm:px-[24px] sm:py-[80px] lg:px-[48px]">
+    <section id="about" className="mx-auto max-w-[1280px] px-[16px] py-[64px] sm:px-[24px] sm:py-[80px] lg:px-[48px]">
       <div className="grid gap-[40px] lg:grid-cols-[1fr_1.1fr]">
-        <div className="rounded-[16px] border border-white/10 bg-zinc-900/70 p-[24px]  sm:p-[32px]">
+        <div className="rounded-[16px] border border-white/10 bg-zinc-900/70 p-[24px] sm:p-[32px]" data-aos="fade-right" data-aos-duration="750">
           <h2 className="text-[24px] font-semibold text-white sm:text-[30px]">About Me</h2>
           <p className="mt-[20px] text-[16px] leading-[32px] text-zinc-300">Motivated and dedicated MERN Stack Developer with a strong foundation in full-stack web development. Skilled in MongoDB, Express.js, React.js, Node.js, and JavaScript, I enjoy building responsive, scalable applications with clean user interfaces and optimized backend systems.</p>
           <div className="mt-[32px] flex  gap-[12px]">
@@ -29,15 +29,19 @@ function About() {
                 <li>
                   <span className="font-semibold text-rose-400">Web Development</span> — Building modern web applications.
                 </li>
-                <li>
-                  <span className="font-semibold text-rose-400">App Development</span> — Creating mobile-friendly experiences.
-                </li>
+
               </ul>
             )}
             {activeTab === "experience" && (
               <ul className="space-y-[12px]">
                 <li>
-                  <span className="font-semibold text-rose-400">2024 - Present</span> — Web development training at EMC with portfolio project work.
+                  <span className="font-semibold text-rose-400">2026 - July - Present</span> — Software Engineer internship at GWC Data.ai with production level fullstack development upskill.
+                </li>
+                <li>
+                  <span className="font-semibold text-rose-400">2026 - Jan - May</span> — MERN full stack web development training at whytap institute.
+                </li>
+                <li>
+                  <span className="font-semibold text-rose-400">2024 - September</span> — Web development training at EMC with portfolio project work.
                 </li>
               </ul>
             )}
@@ -56,7 +60,7 @@ function About() {
             )}
           </div>
         </div>
-        <div className="rounded-[16px] border border-white/10 bg-zinc-900/70 p-[24px] shadow-2xl shadow-black/30">
+        <div className="rounded-[16px] border border-white/10 bg-zinc-900/70 p-[24px] shadow-2xl shadow-black/30" data-aos="fade-left" data-aos-duration="750">
           <h3 className="text-[24px] font-semibold text-white">What I offer</h3>
           <div className="mt-[24px] grid gap-[20px] md:grid-cols-2">
             <div className="rounded-[12px] border border-white/10 bg-zinc-800/80 p-[20px]">
