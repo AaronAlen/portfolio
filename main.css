@@ -1,8 +1,66 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   scroll-behavior: smooth;
+}
+
+/* Slowly Transforming Glowing Rainbow Profile Ring */
+@keyframes rainbowRotate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rainbowPulseGlow {
+  0%, 100% {
+    opacity: 0.75;
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+.rainbow-ring {
+  background: conic-gradient(
+    from 0deg,
+    #ff0055,
+    #a855f7,
+    #3b82f6,
+    #06b6d4,
+    #10b981,
+    #eab308,
+    #f97316,
+    #ef4444,
+    #ff0055
+  );
+  animation: rainbowRotate 8s linear infinite;
+}
+
+.rainbow-glow {
+  background: conic-gradient(
+    from 0deg,
+    #ff0055,
+    #a855f7,
+    #3b82f6,
+    #06b6d4,
+    #10b981,
+    #eab308,
+    #f97316,
+    #ef4444,
+    #ff0055
+  );
+  animation: rainbowRotate 8s linear infinite, rainbowPulseGlow 4s ease-in-out infinite;
+  filter: blur(32px);
 }

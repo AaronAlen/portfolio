@@ -88,8 +88,19 @@ function Home() {
             </h1>
             <p className="mt-[24px] text-[16px] leading-[32px] text-zinc-300 sm:text-[18px]">I build responsive, scalable web apps with thoughtful UI and reliable backend systems.</p>
           </div>
-          <div className="flex justify-center" data-aos="fade-left" data-aos-duration="800">
-            <img src={heroImage} alt="Aaron portrait" className="h-[224px] w-[224px] rounded-full border-[4px] border-rose-500/40 object-cover shadow-[0_0_60px_rgba(255,0,79,0.35)] sm:h-[288px] sm:w-[288px] lg:h-[320px] lg:w-[320px]" />
+          <div className="relative flex items-center justify-center p-[8px]" data-aos="fade-left" data-aos-duration="800">
+            {/* Ambient dynamic multi-color glow aura */}
+            <div className="rainbow-glow absolute -inset-[8px] rounded-full pointer-events-none"></div>
+
+            {/* Glowing border ring with smooth color transformation */}
+            <div className="rainbow-ring absolute -inset-[4px] rounded-full pointer-events-none"></div>
+
+            {/* Aaron portrait with dark border separator */}
+            <img
+              src={heroImage}
+              alt="Aaron portrait"
+              className="relative z-10 h-[224px] w-[224px] rounded-full object-cover ring-[4px] ring-zinc-950 sm:h-[288px] sm:w-[288px] lg:h-[320px] lg:w-[320px]"
+            />
           </div>
         </div>
       </div>
